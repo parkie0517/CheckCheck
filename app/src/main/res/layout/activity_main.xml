@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <!-- account 화면 -->
+    <LinearLayout
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/accountLayout">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@color/purple"
+                android:paddingLeft="30dp"
+                android:paddingTop="20dp">
+
+                <ImageView
+                    android:id="@+id/btnAccountBack"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="105dp"
+                    android:foregroundGravity="left"
+                    android:src="@drawable/account_left" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ACCOUNT"
+                    android:textColor="@color/white"
+                    android:textSize="24dp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_marginTop="-90dp"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:src="@drawable/account_user"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="21dp"
+                    android:layout_marginRight="10dp"
+                    android:text="김젝젝"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/account_icon"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/account_icon4"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/purple1"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="로그인 정보"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F2F2FF"
+                android:padding="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:height="80dp"
+                android:layout_marginTop="10dp"
+                android:text="wychoi19@yonsei.ac.kr"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/account_icon5"
+                android:layout_marginTop="-25dp"
+                android:layout_marginLeft="55dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="30dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/account_icon3"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/purple1"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="친구에게 첵첵박사 알리기"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp">
+                <ImageView
+                    android:paddingTop="3dp"
+                    android:paddingLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/account_icon2"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/purple1"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="첵첵박사에게 건의하기"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="30dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/account_icon1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="탈퇴하기"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 리더참여 / 멤버참여 선택 화면 -->
+    <LinearLayout
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/main">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:paddingLeft="30dp"
+            android:background="@color/purple">
+            <ImageView
+                android:id="@+id/mainLeft"
+                android:layout_marginRight="90dp"
+                android:foregroundGravity="left"
+                android:layout_gravity="center_vertical"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/main_question"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white"
+                android:text="WELCOME"
+                android:textSize="24dp" />
+
+            <ImageView
+                android:id="@+id/mainRight"
+                android:layout_marginLeft="105dp"
+                android:foregroundGravity="right"
+                android:layout_gravity="center_vertical"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/main_person"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/main_background"
+            android:layout_width="420dp"
+            android:layout_height="701dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/mainLeader"
+                android:layout_marginTop="290dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableRight="@drawable/member_icon1"
+                android:background="@drawable/edittext_purple3"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/purple2"
+                android:height="70dp"
+                android:textSize="21dp"
+                android:paddingRight="30dp"
+                android:text="리더로 참여하기"/>
+
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:id="@+id/mainMember"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableRight="@drawable/main_go1"
+                android:background="@drawable/edittext_purple"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:paddingRight="30dp"
+                android:textColor="@color/white"
+                android:height="70dp"
+                android:textSize="21dp"
+                android:text="멤버로 참여하기"/>
+
+            <Button
+                android:layout_marginTop="40dp"
+                android:id="@+id/mainClass"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableRight="@drawable/three_line"
+                android:background="@drawable/edittext_none"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:paddingRight="30dp"
+                android:textColor="#8B8EDC"
+                android:height="70dp"
+                android:textSize="21dp"
+                android:text="내가 만든 클래스"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <!--로딩화면-->
+    <LinearLayout
+        android:id="@+id/loading"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A6A9EB">
+        <ImageView
+            android:layout_marginTop="-70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/main_title"/>
+    </LinearLayout>
+
+    <!--로그인 화면 -->
+    <LinearLayout
+        android:background="@color/white"
+        android:visibility="invisible"
+        android:id="@+id/loginLayout"
+        android:orientation="vertical"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="201dp"
+            android:layout_height="73dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="42dp"
+            android:src="@drawable/login_logo" />
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="60dp"
+                android:textSize="16dp"
+                android:paddingLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_login"
+                android:hint="아이디를 입력해주세요"
+                android:id="@+id/etId">
+            </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="60dp"
+                android:textSize="16dp"
+                android:paddingLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_login"
+                android:hint="비밀번호를 입력해주세요"
+                android:id="@+id/etPw"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+            <TextView
+                android:textColor="@color/purple"
+                android:paddingLeft="30dp"
+                android:textSize="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="자동로그인"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:gravity="right"
+                android:textColor="@color/black"
+                android:paddingRight="30dp"
+                android:textSize="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="내 계정 찾기"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/btnLogin"
+            android:background="@drawable/edittext_purple1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/white"
+            android:height="70dp"
+            android:textSize="16dp"
+            android:text="로그인"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="0dp"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/line39"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/purple"
+                android:text="또는"/>
+            <ImageView
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line39"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="-30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <ImageView
+            android:layout_marginTop="-20dp"
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:src="@drawable/login_intersect"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/login_lectangle9"
+            android:layout_marginTop="-180dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="-145dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center">
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/login_naver"/>
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/login_kakao"/>
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/login_google"/>
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/login_instagram"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="-100dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SNS 계정으로 로그인"
+                android:textSize="14sp"
+                android:textColor="@color/purple2"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="125dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:text="아직도 첵첵박사와 함께 일하지 않나요?"/>
+
+            <TextView
+                android:layout_marginTop="-17dp"
+                android:layout_marginRight="30dp"
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:text="회원가입 > "/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+    <!-- 리더 1 as l1-->
+    <FrameLayout
+        android:visibility="invisible"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/l1">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="370dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/intersect1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:paddingLeft="30dp"
+                android:background="@color/purple">
+                <ImageView
+                    android:layout_marginRight="125dp"
+                    android:foregroundGravity="left"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/l1Back"
+                    android:src="@drawable/btn_left"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:foregroundGravity="center"
+                    android:textColor="@color/white"
+                    android:text="LEAD"
+                    android:textSize="24dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingRight="20dp"
+                    android:layout_marginBottom="30dp">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/step1" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/line2"
+                        android:paddingTop="20dp"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/step2"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/line2"
+                        android:paddingTop="20dp"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/step3"
+
+                        android:paddingTop="8dp"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/line2"
+                        android:paddingTop="20dp"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/step3"
+
+                        android:paddingTop="8dp"/>
+                </LinearLayout>
+                <TextView
+                    android:paddingLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Step 1. 클래스 이름 짓기"
+                    android:textSize="21dp"
+                    android:textColor="@color/purple"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:lines="3"
+                    android:paddingLeft="10dp"
+                    android:hint="답변을 입력하세요."
+                    android:id="@+id/l1ClassName"
+                    android:background="@drawable/edittext_bg_purple"/>
+
+
+                <LinearLayout
+                    android:layout_marginTop="50dp"
+                    android:paddingRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="vertical">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:padding="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="     CREATE   ＋   "
+                        android:textSize="15dp"
+                        android:id="@+id/l1Create"
+                        android:background="@drawable/buttons">
+                    </androidx.appcompat.widget.AppCompatButton>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- 리더 2 as l2-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:background="@color/white"
+        android:id="@+id/l2">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="370dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/intersect1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:paddingLeft="30dp"
+                    android:background="@color/purple">
+                    <ImageView
+                        android:layout_marginRight="125dp"
+                        android:foregroundGravity="left"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/l2Back"
+                        android:src="@drawable/btn_left"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:foregroundGravity="center"
+                        android:textColor="@color/white"
+                        android:text="LEAD"
+                        android:textSize="24dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:paddingTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:paddingRight="20dp"
+                        android:layout_marginBottom="30dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/member_enabled"
+                            android:paddingTop="8dp"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/line2"
+                            android:paddingTop="20dp"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/step1" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/line2"
+                            android:paddingTop="20dp"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/step2"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/line2"
+                            android:paddingTop="20dp"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/step3"
+                            android:paddingTop="8dp"/>
+                    </LinearLayout>
+                    <TextView
+                        android:paddingLeft="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Step 2. 질문 만들기"
+                        android:textSize="21dp"
+                        android:textColor="@color/purple"/>
+
+                    <TextView
+                        android:paddingLeft="30dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Q1"
+                        android:textSize="21dp"
+                        android:textColor="@color/purple"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:height="72dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:lines="3"
+                        android:paddingLeft="10dp"
+                        android:hint="질문을 입력하세요."
+                        android:id="@+id/l2Q1"
+                        android:background="@drawable/edittext_bg_purple"/>
+
+                    <TextView
+                        android:paddingLeft="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Q2"
+                        android:textSize="21dp"
+                        android:textColor="@color/purple"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:height="72dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:lines="3"
+                        android:paddingLeft="10dp"
+                        android:hint="질문을 입력하세요."
+                        android:id="@+id/l2Q2"
+                        android:background="@drawable/edittext_bg_purple"/>
+
+                    <TextView
+                        android:paddingLeft="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Q3"
+                        android:textSize="21dp"
+                        android:textColor="@color/purple"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:height="72dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:lines="3"
+                        android:paddingLeft="10dp"
+                        android:hint="질문을 입력하세요."
+                        android:id="@+id/l2Q3"
+                        android:background="@drawable/edittext_bg_purple"/>
+
+                    <TextView
+                        android:paddingLeft="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Q4"
+                        android:textSize="21dp"
+                        android:textColor="@color/purple"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:height="72dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:lines="3"
+                        android:paddingLeft="10dp"
+                        android:hint="질문을 입력하세요."
+                        android:id="@+id/l2Q4"
+                        android:background="@drawable/edittext_bg_purple"/>
+
+                    <LinearLayout
+                        android:layout_marginTop="50dp"
+                        android:layout_marginBottom="50dp"
+                        android:paddingRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="vertical">
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:padding="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="     NEXT   ▶   "
+                            android:textSize="15dp"
+                            android:id="@+id/l2Next"
+                            android:background="@drawable/buttons">
+                        </androidx.appcompat.widget.AppCompatButton>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+
+
+    <!-- 리더 3 as l3-->
+    <ScrollView
+        android:id="@+id/l3"
+        android:background="@color/white"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="370dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/intersect1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:paddingLeft="30dp"
+                    android:background="@color/purple">
+                    <ImageView
+                        android:layout_marginRight="125dp"
+                        android:foregroundGravity="left"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/l3Back"
+                        android:src="@drawable/btn_left"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:foregroundGravity="center"
+                        android:textColor="@color/white"
+                        android:text="LEAD"
+                        android:textSize="24dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:paddingTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:paddingRight="20dp"
+                        android:layout_marginBottom="30dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/member_enabled"
+                            android:paddingTop="8dp"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/line2"
+                            android:paddingTop="20dp"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/member_enabled"
+                            android:paddingTop="8dp"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/line2"
+                            android:paddingTop="20dp"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/step1" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/line2"
+                            android:paddingTop="20dp"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/step2"/>
+                    </LinearLayout>
+                    <TextView
+                        android:paddingLeft="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Step 3. 답변하기"
+                        android:textSize="21dp"
+                        android:textColor="@color/purple"/>
+
+                    <TextView
+                        android:paddingLeft="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/l3Q1"
+                        android:text="선호하는 문제해결 방식은?"
+                        android:textSize="21dp"
+                        android:textColor="@color/purple"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:height="72dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:lines="3"
+                        android:paddingLeft="10dp"
+                        android:hint="답변을 입력하세요."
+                        android:id="@+id/l3A1"
+                        android:background="@drawable/edittext_bg_purple"/>
+
+                    <TextView
+                        android:paddingLeft="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/l3Q2"
+                        android:text="이름이 뭔가요?"
+                        android:textSize="21dp"
+                        android:textColor="@color/purple"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:height="72dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:lines="3"
+                        android:paddingLeft="10dp"
+                        android:hint="답변을 입력하세요."
+                        android:id="@+id/l3A2"
+                        android:background="@drawable/edittext_bg_purple"/>
+
+                    <TextView
+                        android:paddingLeft="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/l3Q3"
+                        android:text="당신의 국적은?"
+                        android:textSize="21dp"
+                        android:textColor="@color/purple"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:height="72dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:lines="3"
+                        android:paddingLeft="10dp"
+                        android:hint="답변을 입력하세요."
+                        android:id="@+id/l3A3"
+                        android:background="@drawable/edittext_bg_purple"/>
+
+                    <TextView
+                        android:paddingLeft="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/l3Q4"
+                        android:text="성별은?"
+                        android:textSize="21dp"
+                        android:textColor="@color/purple"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:height="72dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:lines="3"
+                        android:paddingLeft="10dp"
+                        android:hint="답변을 입력하세요."
+                        android:id="@+id/l3A4"
+                        android:background="@drawable/edittext_bg_purple"/>
+
+                    <LinearLayout
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="50dp"
+                        android:paddingRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="vertical">
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:padding="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="     NEXT   ▶   "
+                            android:textSize="15dp"
+                            android:id="@+id/l3Next"
+                            android:background="@drawable/buttons">
+                        </androidx.appcompat.widget.AppCompatButton>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+
+
+    <!-- 리더 4 as l4-->
+    <ScrollView
+        android:visibility="invisible"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l4">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="370dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/intersect2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:paddingLeft="30dp"
+                    android:background="@color/purple">
+                    <ImageView
+                        android:layout_marginRight="125dp"
+                        android:foregroundGravity="left"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/l4Back"
+                        android:src="@drawable/btn_left"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:foregroundGravity="center"
+                        android:textColor="@color/white"
+                        android:text="LEAD"
+                        android:textSize="24dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:paddingTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:paddingRight="20dp"
+                        android:layout_marginBottom="30dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/member_enabled"
+                            android:paddingTop="8dp"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/line2"
+                            android:paddingTop="20dp"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/member_enabled"
+                            android:paddingTop="8dp"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/line2"
+                            android:paddingTop="20dp"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/member_enabled"
+                            android:paddingTop="8dp"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/line2"
+                            android:paddingTop="20dp"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/step1"/>
+                    </LinearLayout>
+                    <TextView
+                        android:paddingLeft="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Step 4. 검토하기"
+                        android:textSize="21dp"
+                        android:textColor="@color/purple"/>
+
+                    <TextView
+                        android:paddingLeft="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/l4Q1"
+                        android:text="선호하는 문제해결 방식은?"
+                        android:textSize="16dp"
+                        android:textColor="@color/dark_grey"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:height="80dp"
+                        android:padding="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="10dp"
+                        android:text="그 자리에서 바로 해결한다."
+                        android:textSize="18dp"
+                        android:id="@+id/l4A1"
+                        android:textColor="#474747"
+                        android:background="@drawable/textview_bg_dark"/>
+
+                    <TextView
+                        android:paddingLeft="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/l4Q2"
+                        android:text="이름이 뭔가요?"
+                        android:textSize="16dp"
+                        android:textColor="@color/dark_grey"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:height="80dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="10dp"
+                        android:text="박희준"
+                        android:textColor="#474747"
+                        android:textSize="18dp"
+                        android:padding="10dp"
+                        android:id="@+id/l4A2"
+                        android:background="@drawable/textview_bg_dark"/>
+
+                    <TextView
+                        android:paddingLeft="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/l4Q3"
+                        android:text="당신의 국적은?"
+                        android:textSize="16dp"
+                        android:textColor="@color/dark_grey"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:height="80dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="10dp"
+                        android:text="호주"
+                        android:textSize="18dp"
+                        android:padding="10dp"
+                        android:textColor="#474747"
+                        android:id="@+id/l4A3"
+                        android:background="@drawable/textview_bg_dark"/>
+
+                    <TextView
+                        android:paddingLeft="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/l4Q4"
+                        android:text="성별은?"
+                        android:textSize="16dp"
+                        android:textColor="@color/dark_grey"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:height="80dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="10dp"
+                        android:text="남"
+                        android:textColor="#474747"
+                        android:padding="10dp"
+                        android:textSize="18dp"
+                        android:id="@+id/l4A4"
+                        android:background="@drawable/textview_bg_dark"/>
+
+                    <LinearLayout
+                        android:layout_marginTop="50dp"
+                        android:layout_marginBottom="50dp"
+                        android:paddingRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="vertical">
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:padding="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="   FINISH   ▶ "
+                            android:textSize="15dp"
+                            android:id="@+id/l4Finish"
+                            android:background="@drawable/buttons">
+                        </androidx.appcompat.widget.AppCompatButton>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+
+    <!-- 리더 5 new as l5 -->
+    <LinearLayout
+        android:background="@color/white"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/l5">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:paddingLeft="30dp"
+            android:background="@color/purple">
+            <ImageView
+                android:layout_marginRight="125dp"
+                android:foregroundGravity="left"
+                android:layout_gravity="center_vertical"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/l5Home"
+                android:src="@drawable/member_icon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:foregroundGravity="center"
+                android:textColor="@color/white"
+                android:text="LEAD"
+                android:textSize="24dp" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/checkcheck"/>
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lead5_classcode2"/>
+
+        <ImageView
+            android:layout_width="563dp"
+            android:layout_height="637dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="-390dp"
+            android:src="@drawable/member_bg3" />
+
+        <ImageView
+            android:layout_width="557dp"
+            android:layout_height="460dp"
+            android:layout_marginLeft="-60dp"
+            android:layout_marginTop="-490dp"
+            android:src="@drawable/member_bg2" />
+
+        <TextView
+            android:textSize="21dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="-380dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/l5Title"
+            android:text="BERT기반 팀빌딩 서비스 2022"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/l5Go"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="50dp"
+            android:background="@drawable/edittext_purple3"
+            android:drawableRight="@drawable/member_icon1"
+            android:text="결과 보러가기"
+            android:textColor="@color/purple1"
+            android:textSize="21dp"/>
+    </LinearLayout>
+
+
+</FrameLayout>

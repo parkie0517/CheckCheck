@@ -1,0 +1,1005 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MyClassActivity">
+
+    <!-- 내클 3 as mc33 박희준-->
+    <ScrollView
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/mc33">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:paddingLeft="30dp"
+                    android:background="@color/purple">
+                    <ImageView
+                        android:layout_marginRight="100dp"
+                        android:foregroundGravity="left"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/mc3Back3"
+                        android:src="@drawable/btn_left"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:foregroundGravity="center"
+                        android:textColor="@color/white"
+                        android:text="결과 보기"
+                        android:textSize="24dp" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:background="@color/purple"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:orientation="vertical"
+                            android:background="@color/purple">
+                            <TextView
+                                android:layout_marginLeft="50dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="21sp"
+                                android:textColor="@color/white"
+                                android:text="“ 박희준 ”님과 "/>
+                            <TextView
+                                android:layout_marginLeft="60dp"
+                                android:textSize="28sp"
+                                android:textColor="@color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="나의 일치율"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <FrameLayout
+                        android:layout_gravity="bottom|right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ellipse5_full" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="61%"
+                            android:textColor="@color/white"
+                            android:textSize="56sp"
+                            android:layout_gravity="center"/>
+                    </FrameLayout>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!-- 질문 1 -->
+                    <TextView
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="▶ 선호하는 문제해결 방식은?"
+                        android:textSize="21sp"
+                        android:textColor="@color/purple2" />
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:padding="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:text="상황을 분석하고, 내가 할 수 있는 한에서 곧바로 문제를 해결하려고 노력한다."
+                        android:textColor="#5E61A4"
+                        android:textSize="18sp"
+                        android:background="@drawable/textview_bg_purple"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:padding="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:text="문제에 대한 정보가 흐릿해지기 전에 문제를 먼저 메모해두고 일정 기간을 정해 해결 방법을 고민해보고 정한 기간이 지나면 최적의 해결책을 선택한다."
+                        android:textColor="#979797"
+                        android:textSize="18sp"
+                        android:background="@drawable/textview_bg_myclass"/>
+                    <!-- 질문 2 -->
+                    <TextView
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="▶ 목표와 목적의 차이는?"
+                        android:textSize="21sp"
+                        android:textColor="@color/purple2"/>
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:padding="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:text="목표는 이루어내야 하는 것이고, 목적은 목표를 달성해야되는 이유다."
+                        android:textColor="#5E61A4"
+                        android:textSize="18sp"
+                        android:background="@drawable/textview_bg_purple"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:padding="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:text="목적은 말그대로 목적지 그 자체로 이루고자 하는 바를 뜻하는 장기적인 과제이며, 목표는 그 목적지로 가는 과정에서 얻고자 하는 단기적인 과제를 말한다."
+                        android:textColor="#979797"
+                        android:textSize="18sp"
+                        android:background="@drawable/textview_bg_myclass"/>
+                    <!-- 질문 3 -->
+                    <TextView
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="▶ 나를 세 문장으로 표현한다면?"
+                        android:textSize="21sp"
+                        android:textColor="@color/purple2"/>
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:padding="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:text="소통형 팀원. 포기하지 않는 노력파. 지치지 않는 에너자이저."
+                        android:textColor="#5E61A4"
+                        android:textSize="18sp"
+                        android:background="@drawable/textview_bg_purple"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:padding="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:text="게으른 천재. 귀찮은 건 해도 싫은 건 절대 안 해. 내 사람은 내가 챙긴다."
+                        android:textColor="#979797"
+                        android:textSize="18sp"
+                        android:background="@drawable/textview_bg_myclass"/>
+                    <!-- 질문 4-->
+                    <TextView
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="▶ 지금까지 대학 생활 동안 가장 기억에 남는 경험은?"
+                        android:textSize="21sp"
+                        android:textColor="@color/purple2"/>
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:padding="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:text="학우들과 공모전에 출전해 수상한 경험."
+                        android:textColor="#5E61A4"
+                        android:textSize="18sp"
+                        android:background="@drawable/textview_bg_purple"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:padding="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:text="조별과제 중 발표기간까지 새벽 내내 괴롭히며 발표 30분 전에 자료를 넘겨받고 조별과제가 망해버린 경험"
+                        android:textColor="#979797"
+                        android:textSize="18sp"
+                        android:background="@drawable/textview_bg_myclass"/>
+
+                    <LinearLayout
+                        android:layout_marginBottom="50dp"
+                        android:layout_marginTop="30dp"
+                        android:paddingRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:padding="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="   ◀   BACK     "
+                            android:textSize="15dp"
+                            android:id="@+id/mc3Return3"
+                            android:background="@drawable/buttons">
+                        </androidx.appcompat.widget.AppCompatButton>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 내클 3 as mc31 최우영-->
+    <ScrollView
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/mc31">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:paddingLeft="30dp"
+                    android:background="@color/purple">
+                    <ImageView
+                        android:layout_marginRight="100dp"
+                        android:foregroundGravity="left"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/mc3Back1"
+                        android:src="@drawable/btn_left"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:foregroundGravity="center"
+                        android:textColor="@color/white"
+                        android:text="결과 보기"
+                        android:textSize="24dp" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:background="@color/purple"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:orientation="vertical"
+                            android:background="@color/purple">
+                            <TextView
+                                android:layout_marginLeft="50dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="21sp"
+                                android:textColor="@color/white"
+                                android:text="“ 최우영 ”님과 "/>
+                            <TextView
+                                android:layout_marginLeft="60dp"
+                                android:textSize="28sp"
+                                android:textColor="@color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="나의 일치율"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <FrameLayout
+                        android:layout_gravity="bottom|right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ellipse5_full" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="82%"
+                            android:textColor="@color/white"
+                            android:textSize="56sp"
+                            android:layout_gravity="center"/>
+                    </FrameLayout>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!-- 질문 1 -->
+                    <TextView
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="▶ 선호하는 문제해결 방식은?"
+                        android:textSize="21sp"
+                        android:textColor="@color/purple2" />
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:padding="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:text="계획을 세우고 실행한다."
+                        android:textColor="#5E61A4"
+                        android:textSize="18sp"
+                        android:background="@drawable/textview_bg_purple"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:padding="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:text="문제에 대한 정보가 흐릿해지기 전에 문제를 먼저 메모해두고 일정 기간을 정해 해결 방법을 고민해보고 정한 기간이 지나면 최적의 해결책을 선택한다."
+                        android:textColor="#979797"
+                        android:textSize="18sp"
+                        android:background="@drawable/textview_bg_myclass"/>
+                    <!-- 질문 2 -->
+                    <TextView
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="▶ 목표와 목적의 차이는?"
+                        android:textSize="21sp"
+                        android:textColor="@color/purple2"/>
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:padding="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:text="목표 == 결과물, 목적 == 결과물을 통해 배울 수 있는 것"
+                        android:textColor="#5E61A4"
+                        android:textSize="18sp"
+                        android:background="@drawable/textview_bg_purple"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:padding="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:text="목적은 말그대로 목적지 그 자체로 이루고자 하는 바를 뜻하는 장기적인 과제이며, 목표는 그 목적지로 가는 과정에서 얻고자 하는 단기적인 과제를 말한다."
+                        android:textColor="#979797"
+                        android:textSize="18sp"
+                        android:background="@drawable/textview_bg_myclass"/>
+                    <!-- 질문 3 -->
+                    <TextView
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="▶ 나를 세 문장으로 표현한다면?"
+                        android:textSize="21sp"
+                        android:textColor="@color/purple2"/>
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:padding="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:text="모바일 프로그래머. 어려운 문제 해결을 좋아함. 이론보다는 실전이 중요하다고 생각함."
+                        android:textColor="#5E61A4"
+                        android:textSize="18sp"
+                        android:background="@drawable/textview_bg_purple"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:padding="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:text="게으른 천재. 귀찮은 건 해도 싫은 건 절대 안 해. 내 사람은 내가 챙긴다."
+                        android:textColor="#979797"
+                        android:textSize="18sp"
+                        android:background="@drawable/textview_bg_myclass"/>
+                    <!-- 질문 4-->
+                    <TextView
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="▶ 지금까지 대학 생활 동안 가장 기억에 남는 경험은?"
+                        android:textSize="21sp"
+                        android:textColor="@color/purple2"/>
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:padding="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:text="지금.."
+                        android:textColor="#5E61A4"
+                        android:textSize="18sp"
+                        android:background="@drawable/textview_bg_purple"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:padding="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:text="조별과제 중 발표기간까지 새벽 내내 괴롭히며 발표 30분 전에 자료를 넘겨받고 조별과제가 망해버린 경험"
+                        android:textColor="#979797"
+                        android:textSize="18sp"
+                        android:background="@drawable/textview_bg_myclass"/>
+
+                    <LinearLayout
+                        android:layout_marginBottom="50dp"
+                        android:layout_marginTop="30dp"
+                        android:paddingRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:padding="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="   ◀   BACK     "
+                            android:textSize="15dp"
+                            android:id="@+id/mc3Return1"
+                            android:background="@drawable/buttons">
+                        </androidx.appcompat.widget.AppCompatButton>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 내클 3 as mc32 남윤지-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:id="@+id/mc32">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:paddingLeft="30dp"
+                    android:background="@color/purple">
+                    <ImageView
+                        android:layout_marginRight="100dp"
+                        android:foregroundGravity="left"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/mc3Back2"
+                        android:src="@drawable/btn_left"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:foregroundGravity="center"
+                        android:textColor="@color/white"
+                        android:text="결과 보기"
+                        android:textSize="24dp" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:background="@color/purple"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:orientation="vertical"
+                            android:background="@color/purple">
+                            <TextView
+                                android:layout_marginLeft="50dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="21sp"
+                                android:textColor="@color/white"
+                                android:text="“ 남윤지 ”님과 "/>
+                            <TextView
+                                android:layout_marginLeft="60dp"
+                                android:textSize="28sp"
+                                android:textColor="@color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="나의 일치율"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <FrameLayout
+                        android:layout_gravity="bottom|right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ellipse5_full" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="65%"
+                            android:textColor="@color/white"
+                            android:textSize="56sp"
+                            android:layout_gravity="center"/>
+                    </FrameLayout>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!-- 질문 1 -->
+                    <TextView
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="▶ 선호하는 문제해결 방식은?"
+                        android:textSize="21sp"
+                        android:textColor="@color/purple2" />
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:padding="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:text="시간을 두고 판단하지만, 대체로 급박하게 인생이 진행됨으로 할 수 있다면 곧바로 문제를 해결한다."
+                        android:textColor="#5E61A4"
+                        android:textSize="18sp"
+                        android:background="@drawable/textview_bg_purple"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:padding="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:text="문제에 대한 정보가 흐릿해지기 전에 문제를 먼저 메모해두고 일정 기간을 정해 해결 방법을 고민해보고 정한 기간이 지나면 최적의 해결책을 선택한다."
+                        android:textColor="#979797"
+                        android:textSize="18sp"
+                        android:background="@drawable/textview_bg_myclass"/>
+                    <!-- 질문 2 -->
+                    <TextView
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="▶ 목표와 목적의 차이는?"
+                        android:textSize="21sp"
+                        android:textColor="@color/purple2"/>
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:padding="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:text="목표는 순서대로 일정수준을 달성하는 것을 목적으로 두는 것,  목적은 행위 또는 그 진행 자체에 의의를 두게 하는 우선적인 동기."
+                        android:textColor="#5E61A4"
+                        android:textSize="18sp"
+                        android:background="@drawable/textview_bg_purple"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:padding="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:text="목적은 말그대로 목적지 그 자체로 이루고자 하는 바를 뜻하는 장기적인 과제이며, 목표는 그 목적지로 가는 과정에서 얻고자 하는 단기적인 과제를 말한다."
+                        android:textColor="#979797"
+                        android:textSize="18sp"
+                        android:background="@drawable/textview_bg_myclass"/>
+                    <!-- 질문 3 -->
+                    <TextView
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="▶ 나를 세 문장으로 표현한다면?"
+                        android:textSize="21sp"
+                        android:textColor="@color/purple2"/>
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:padding="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:text="협력적인 조력자. 학문적이고 이론을 통한 장기간의 교육 선호. 자료, 아이디어, 사물과 관련된 활동을 선호."
+                        android:textColor="#5E61A4"
+                        android:textSize="18sp"
+                        android:background="@drawable/textview_bg_purple"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:padding="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:text="게으른 천재. 귀찮은 건 해도 싫은 건 절대 안 해. 내 사람은 내가 챙긴다."
+                        android:textColor="#979797"
+                        android:textSize="18sp"
+                        android:background="@drawable/textview_bg_myclass"/>
+                    <!-- 질문 4-->
+                    <TextView
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="▶ 지금까지 대학 생활 동안 가장 기억에 남는 경험은?"
+                        android:textSize="21sp"
+                        android:textColor="@color/purple2"/>
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:padding="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:text="사람들과 교류하거나 팀 작업을 한 것."
+                        android:textColor="#5E61A4"
+                        android:textSize="18sp"
+                        android:background="@drawable/textview_bg_purple"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:padding="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:text="조별과제 중 발표기간까지 새벽 내내 괴롭히며 발표 30분 전에 자료를 넘겨받고 조별과제가 망해버린 경험"
+                        android:textColor="#979797"
+                        android:textSize="18sp"
+                        android:background="@drawable/textview_bg_myclass"/>
+
+                    <LinearLayout
+                        android:layout_marginBottom="50dp"
+                        android:layout_marginTop="30dp"
+                        android:paddingRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:padding="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="   ◀   BACK     "
+                            android:textSize="15dp"
+                            android:id="@+id/mc3Return2"
+                            android:background="@drawable/buttons">
+                        </androidx.appcompat.widget.AppCompatButton>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 내클 2 mc2-->
+    <LinearLayout
+        android:background="@color/white"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mc2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:paddingLeft="30dp"
+                    android:background="@color/purple">
+                    <ImageView
+                        android:layout_marginRight="100dp"
+                        android:foregroundGravity="left"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/mc2Back"
+                        android:src="@drawable/btn_left"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:foregroundGravity="center"
+                        android:textColor="@color/white"
+                        android:text="결과 보기"
+                        android:textSize="24dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:paddingLeft="50dp"
+                        android:paddingTop="50dp"
+                        android:paddingBottom="50dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="“ BERT기반 팀빌딩 서비스 2022 ”"
+                        android:textSize="21dp"
+                        android:textStyle="bold"
+                        android:id="@+id/mc2Title"
+                        android:textColor="@color/purple"
+                        android:background="@color/light_purple"/>
+                    <LinearLayout
+                        android:layout_marginTop="50dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:paddingLeft="30dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="   클래스 고유 코드            2848GDSC"
+                            android:textSize="18dp"
+                            android:textColor="@color/purple"/>
+                        <ImageView
+                            android:layout_marginLeft="40dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/share"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="40dp"
+                        android:paddingLeft="10dp"
+                        android:text="참여자 목록"
+                        android:textColor="#8B8EDC"
+                        android:textSize="21sp"
+                        />
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="30dp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="65dp"
+                                    android:text="순위"
+                                    android:textColor="@color/purple"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="55dp"
+                                    android:text="일치율"
+                                    android:textColor="@color/purple"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="65dp"
+                                    android:text="이름"
+                                    android:textColor="@color/purple"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginTop="5dp"
+                                android:layout_width="350dp"
+                                android:layout_height="1dp"
+                                android:background="@color/purple"
+                                android:layout_marginLeft="30dp"/>
+
+                            <ImageView
+                                android:id="@+id/mc2List1"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/myclass_group1"/>
+                            <ImageView
+                                android:id="@+id/mc2List2"
+                                android:layout_marginTop="20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/myclass_group2"/>
+                            <ImageView
+                                android:id="@+id/mc2List3"
+                                android:layout_marginTop="20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/myclass_group3"/>
+
+
+
+                            <LinearLayout
+                                android:layout_marginTop="50dp"
+                                android:gravity="bottom"
+                                android:layout_width="match_parent"
+                                android:layout_height="90dp"
+                                android:background="#F2F2FF">
+                                <TextView
+                                    android:layout_marginTop="10dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:gravity="center"
+                                    android:layout_gravity="top"
+                                    android:text="클래스 비활성화하기"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 내클 1 mc1-->
+    <LinearLayout
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mc1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:paddingLeft="30dp"
+                android:background="@color/purple">
+                <ImageView
+                    android:layout_marginRight="60dp"
+                    android:foregroundGravity="left"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/mc1Back"
+                    android:src="@drawable/btn_left"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:foregroundGravity="center"
+                    android:textColor="@color/white"
+                    android:text="내가 개설한 클래스"
+                    android:textSize="24dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="26dp"
+                        android:layout_height="150dp"
+                        android:background="@color/light_purple"/>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="70dp"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="클래스명"
+                            android:textSize="21sp"
+                            android:textColor="@color/purple"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="생성일"
+                                android:textSize="16sp"/>
+                            <TextView
+                                android:layout_marginLeft="210dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="참여수"
+                                android:textSize="16sp"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+                <ImageView
+                    android:id="@+id/mc1List"
+                    android:layout_width="match_parent"
+                    android:layout_height="92dp"
+
+                    android:src="@drawable/mc1_list"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <!--멤버로 참여하기 5-->
+    <LinearLayout
+        android:id="@+id/memberLayout5"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:paddingLeft="30dp"
+            android:background="@color/purple">
+            <ImageView
+                android:layout_marginRight="105dp"
+                android:foregroundGravity="left"
+                android:layout_gravity="center_vertical"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/btnMemberHome"
+                android:src="@drawable/member_icon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white"
+                android:text="MEMBER"
+                android:textSize="24dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:textSize="21dp"
+            android:textColor="@color/purple2"
+            android:layout_marginTop="130dp"
+            android:paddingRight="60dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="성공적으로 제출되었습니다!"/>
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/member_bg1"/>
+
+        <ImageView
+            android:layout_width="563dp"
+            android:layout_height="637dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="-390dp"
+            android:src="@drawable/member_bg3" />
+
+        <ImageView
+            android:layout_width="557dp"
+            android:layout_height="460dp"
+            android:layout_marginLeft="-60dp"
+            android:layout_marginTop="-490dp"
+            android:src="@drawable/member_bg2" />
+
+        <TextView
+            android:textSize="14dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="-350dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="이번에는 리더로서 직접 클래스를 열어볼까요?"/>
+
+        <Button
+            android:id="@+id/btnMember5"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="-0dp"
+            android:layout_marginRight="30dp"
+            android:paddingRight="20dp"
+            android:background="@drawable/edittext_purple3"
+            android:drawableRight="@drawable/member_icon1"
+            android:text="첵첵박사 사용법 알아보기"
+            android:textColor="@color/purple1"
+            android:textSize="18dp"></Button>
+
+
+
+
+
+    </LinearLayout>
+
+    <!-- 멤버로 참여하기 4번 -->
+    <ScrollView
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:id="@+id/memberLayout4">
+        <LinearLayout
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:paddingLeft="30dp"
+                android:background="@color/purple">
+                <ImageView
+                    android:layout_marginRight="105dp"
+                    android:foregroundGravity="left"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/btnBack4"
+                    android:src="@drawable/account_left"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:text="MEMBER"
+                    android:textSize="24dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/member_bg"/>
+
+                <LinearLayout
+                    android:paddingTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingRight="20dp"
+                    android:layout_marginTop="-170dp"
+                    android:layout_marginBottom="30dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/member_enabled"
+                        android:paddingTop="8dp"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/line2"
+                        android:paddingTop="20dp"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/member_enabled"
+                        android:paddingTop="8dp"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/line2"
+                        android:paddingTop="20dp"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/step1"/>
+                </LinearLayout>
+
+                <TextView
+                    android:paddingLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Step3. 검토하기"
+                    android:textSize="21dp"
+                    android:layout_marginBottom="30dp"
+                    android:textColor="@color/purple"/>
+
+                    <TextView
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:id="@+id/question1"
+                        android:text="선호하는 문제해결 방식은?"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:lines="3"
+                        android:padding="16dp"
+                        android:textColor="@color/black"
+                        android:text="답변을 입력하세요."
+                        android:id="@+id/show1"
+                        android:background="@drawable/edittext_login"/>
+
+                    <TextView
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:id="@+id/question2"
+                        android:text="목표와 목적의 차이는"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:height="100dp"
+                        android:lines="3"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:padding="16dp"
+                        android:textColor="@color/black"
+                        android:text="답변을 입력하세요."
+                        android:id="@+id/show2"
+                        android:background="@drawable/edittext_login"/>
+
+                    <TextView
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:id="@+id/question3"
+                        android:text="나를 세 문장으로 표현한다면?"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:height="100dp"
+                        android:lines="3"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:padding="16dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/show3"
+                        android:text="답변을 입력하세요."
+                        android:background="@drawable/edittext_login"/>
+
+                    <TextView
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:id="@+id/question4"
+                        android:text="지금까지 대학 생활 동안 가장 기억에 남는 경험은?"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:padding="16dp"
+                        android:textColor="@color/black"
+                        android:lines="3"
+                        android:id="@+id/show4"
+                        android:text="답변을 입력하세요."
+                        android:background="@drawable/edittext_login"/>
+
+                    <LinearLayout
+                        android:layout_marginTop="20dp"
+                        android:paddingRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="vertical">
+                        <Button
+                            android:padding="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="   FINISH  >   "
+                            android:textSize="15dp"
+                            android:id="@+id/btnMember4"
+                            android:background="@drawable/buttons"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+    <!--멤버로 참여하기 3번-->
+    <ScrollView
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:id="@+id/memberLayout3">
+        <LinearLayout
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/ll1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:paddingLeft="30dp"
+                android:background="@color/purple">
+                <ImageView
+                    android:layout_marginRight="105dp"
+                    android:foregroundGravity="left"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/btnBack3"
+                    android:src="@drawable/account_left"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:text="MEMBER"
+                    android:textSize="24dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/member_bg"/>
+
+                <LinearLayout
+                    android:paddingTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingRight="20dp"
+                    android:layout_marginTop="-170dp"
+                    android:layout_marginBottom="30dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/member_enabled"
+                        android:paddingTop="8dp"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/line2"
+                        android:paddingTop="20dp"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/step1" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/line2"
+                        android:paddingTop="20dp"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/step2"/>
+                </LinearLayout>
+
+                <TextView
+                    android:paddingLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Step2. 답변하기"
+                    android:textSize="21dp"
+                    android:layout_marginBottom="30dp"
+                    android:textColor="@color/purple"/>
+
+            <TextView
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/purple2"
+                android:id="@+id/showQuestion1"
+                android:text="선호하는 문제해결 방식은?"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:lines="3"
+                android:paddingLeft="10dp"
+                android:id="@+id/answer1"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/edittext_bg_purple"/>
+
+                <TextView
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:textColor="@color/purple2"
+                    android:id="@+id/showQuestion2"
+                    android:text="목표와 목적 차이?"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:height="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:lines="3"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/answer2"
+                    android:layout_marginBottom="25dp"
+                    android:background="@drawable/edittext_bg_purple"/>
+                <TextView
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:id="@+id/showQuestion3"
+                    android:textColor="@color/purple2"
+                    android:text="나를 세 문장?"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:height="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:lines="3"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/answer3"
+                    android:layout_marginBottom="25dp"
+                    android:background="@drawable/edittext_bg_purple"/>
+
+                <TextView
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:textColor="@color/purple2"
+                    android:id="@+id/showQuestion4"
+                    android:text="대학생활중 기억 남는 경험은 무엇인가?"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:height="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:lines="3"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/answer4"
+                    android:layout_marginBottom="25dp"
+                    android:background="@drawable/edittext_bg_purple"/>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:paddingRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="vertical">
+                <Button
+                    android:padding="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="   NEXT  >   "
+                    android:textSize="15dp"
+                    android:id="@+id/btnMember3"
+                    android:background="@drawable/buttons"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+    <!-- 멤버로 참여하기 2번-->
+    <LinearLayout
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/memberLayout2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:paddingLeft="30dp"
+            android:background="@color/purple">
+            <ImageView
+                android:layout_marginRight="105dp"
+                android:foregroundGravity="left"
+                android:layout_gravity="center_vertical"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/btnBack2"
+                android:src="@drawable/account_left"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white"
+                android:text="MEMBER"
+                android:textSize="24dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/member_bg"/>
+
+            <LinearLayout
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingRight="20dp"
+                android:layout_marginTop="-170dp"
+                android:layout_marginBottom="30dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/step1" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/line2"
+                    android:paddingTop="20dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/step2"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/line2"
+                    android:paddingTop="20dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/step3"
+                    android:paddingTop="8dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:paddingLeft="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Step1. 클래스 코드 입력하기"
+                android:textSize="21dp"
+                android:layout_marginBottom="50dp"
+                android:textColor="@color/purple"/>
+
+            <TextView
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="21dp"
+                android:layout_marginBottom="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/purple1"
+                android:text="'BERT기반 팀빌딩 서비스 2022'"/>
+
+            <TextView
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="21dp"
+                android:textColor="@color/purple"
+                android:text="에 참여하시겠어요?"/>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:paddingRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="vertical">
+                <Button
+                    android:padding="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="   VISIT  >   "
+                    android:id="@+id/btnMember2"
+                    android:textSize="15dp"
+                    android:background="@drawable/buttons"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>-->
+
+    <!-- 멤버로 참여하기 1번 -->
+    <LinearLayout
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/memberLayout1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:paddingLeft="30dp"
+            android:background="@color/purple">
+            <ImageView
+                android:layout_marginRight="105dp"
+                android:foregroundGravity="left"
+                android:layout_gravity="center_vertical"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/btnBack1"
+                android:src="@drawable/account_left"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white"
+                android:text="MEMBER"
+                android:textSize="24dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/member_bg"/>
+
+            <LinearLayout
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingRight="20dp"
+                android:layout_marginTop="-170dp"
+                android:layout_marginBottom="30dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/step1" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/line2"
+                    android:paddingTop="20dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/step2"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/line2"
+                    android:paddingTop="20dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/step3"
+
+                    android:paddingTop="8dp"/>
+            </LinearLayout>
+            <TextView
+                android:paddingLeft="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Step1. 클래스 코드 입력하기"
+                android:textSize="21dp"
+                android:textColor="@color/purple"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/edittext_bg_purple"/>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:paddingRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/btnMember1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/member_btn_search"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
